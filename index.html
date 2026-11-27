@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sei's | haven</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 L27 7.5 V15.5 C27 22.2 22.3 26.8 16 29.5 C9.7 26.8 5 22.2 5 15.5 V7.5 Z' fill='%23681c1d' stroke='%23e7c888' stroke-width='2'/%3E%3Cpath d='M16 8 V22 M12 13 H20' stroke='%23e7c888' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,234 +18,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Animated Medieval Twilight Sky, Moon, Clouds, Flying Dragons & Castle -->
+    <!-- Photorealistic Medieval Scenery & Live Atmospheric Dragon Sky -->
     <div class="medieval-sky" aria-hidden="true">
-      <div class="sky-stars"></div>
-      <div class="sky-moon"></div>
-
-      <svg class="cloud cloud-1" viewBox="0 0 460 110" fill="none">
-        <path
-          d="M24 88 C42 64 82 54 114 60 C138 30 198 22 238 44 C272 28 326 34 352 58 C388 54 422 68 440 88 Z"
-          fill="#c4b39c"
-          opacity="0.35"
-        />
-      </svg>
-      <svg class="cloud cloud-2" viewBox="0 0 600 120" fill="none">
-        <path
-          d="M18 98 C56 68 112 58 158 68 C196 34 270 26 324 52 C376 32 454 38 492 66 C532 62 568 76 586 98 Z"
-          fill="#9d90a8"
-          opacity="0.32"
-        />
-      </svg>
-      <svg class="cloud cloud-3" viewBox="0 0 420 96" fill="none">
-        <path
-          d="M16 80 C44 58 88 52 124 60 C156 36 214 34 252 54 C288 42 340 48 366 64 C388 64 404 72 412 80 Z"
-          fill="#d7956f"
-          opacity="0.22"
-        />
-      </svg>
-
-      <!-- Distant Moonlit Dragon -->
-      <div class="dragon-flight dragon-flight-distant">
-        <svg class="dragon-svg" viewBox="0 0 380 190" fill="none">
-          <g class="dragon-body-bob">
-            <g class="dragon-wing-back">
-              <path
-                d="M192 86 L168 42 L116 20 C128 40 134 52 146 56 C158 62 166 72 178 86 Z"
-                fill="#110e18"
-              />
-            </g>
-            <g class="dragon-tail">
-              <path
-                d="M148 96 C116 108 78 90 42 103 L14 94 L34 111 C68 106 112 117 152 102 Z"
-                fill="#0f0c16"
-              />
-            </g>
-            <path
-              d="M146 95 C166 84 196 84 218 91 C234 86 248 74 264 68 L292 73 L284 82 L262 84 C244 96 220 109 190 107 C170 106 154 103 146 95 Z"
-              fill="#0f0c16"
-            />
-            <g class="dragon-wing-front">
-              <path
-                d="M184 90 L156 34 L86 14 C102 36 102 52 108 58 C124 58 130 72 134 80 C150 78 158 88 172 95 Z"
-                fill="#16111e"
-              />
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <!-- Great Sky Dragon with Articulated Flapping Wings & Dragonfire -->
-      <div class="dragon-flight dragon-flight-main">
-        <svg class="dragon-svg" viewBox="0 0 380 190" fill="none">
-          <defs>
-            <linearGradient id="dragon-wing-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#3c1820" />
-              <stop offset="55%" stop-color="#22141e" />
-              <stop offset="100%" stop-color="#110d15" />
-            </linearGradient>
-            <linearGradient id="dragon-body-grad" x1="0" y1="0" x2="1" y2="0.4">
-              <stop offset="0%" stop-color="#17121b" />
-              <stop offset="55%" stop-color="#29161f" />
-              <stop offset="100%" stop-color="#3e1e21" />
-            </linearGradient>
-            <linearGradient id="dragon-fire-grad" x1="0" y1="0.5" x2="1" y2="0.5">
-              <stop offset="0%" stop-color="#fff4b8" stop-opacity="0.95" />
-              <stop offset="35%" stop-color="#f79634" stop-opacity="0.88" />
-              <stop offset="78%" stop-color="#c93622" stop-opacity="0.55" />
-              <stop offset="100%" stop-color="#c93622" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-
-          <g class="dragon-body-bob">
-            <!-- Back Wing -->
-            <g class="dragon-wing-back">
-              <path
-                d="M192 86 L172 40 L122 18 C134 36 138 50 144 56 C154 58 162 68 168 78 L184 88 Z"
-                fill="#1f1219"
-                stroke="#a9522e"
-                stroke-width="1.2"
-              />
-              <path
-                d="M172 40 L144 56 M172 40 L166 74"
-                stroke="#853d24"
-                stroke-width="1"
-                opacity="0.7"
-              />
-            </g>
-
-            <!-- Sinuous Barbed Tail -->
-            <g class="dragon-tail">
-              <path
-                d="M150 96 C122 108 92 92 62 100 C46 104 34 98 24 94 L10 92 L22 104 L18 112 L34 106 C58 108 90 104 122 113 C136 116 146 107 154 102 Z"
-                fill="url(#dragon-body-grad)"
-                stroke="#c77a35"
-                stroke-width="0.9"
-                stroke-opacity="0.45"
-              />
-              <!-- Dorsal tail spines -->
-              <path
-                d="M134 99 L130 91 L126 100 M112 97 L108 89 L104 98 M88 95 L84 88 L80 96"
-                fill="#592622"
-              />
-            </g>
-
-            <!-- Dragonfire Breath -->
-            <g class="dragon-breath">
-              <path
-                d="M290 77 C312 68 334 62 362 68 C346 74 358 78 372 80 C352 84 344 90 356 95 C328 96 310 88 290 81 Z"
-                fill="url(#dragon-fire-grad)"
-              />
-              <path
-                d="M291 78 C308 73 324 73 340 78 C324 83 308 83 291 80 Z"
-                fill="#fff3be"
-                opacity="0.88"
-              />
-            </g>
-
-            <!-- Torso, Neck, Horns, Head & Claws -->
-            <path
-              d="M146 95 C164 85 190 83 214 90 C230 85 244 74 258 66 L240 48 L266 62 L248 53 L272 64 L294 72 L292 78 L278 78 L288 84 L282 88 L264 84 C248 94 232 106 208 108 L220 116 L212 117 L202 110 C186 112 170 110 158 106 L146 118 L140 114 L150 103 Z"
-              fill="url(#dragon-body-grad)"
-              stroke="#d99742"
-              stroke-width="1.15"
-              stroke-opacity="0.58"
-            />
-            <!-- Glowing Eye -->
-            <circle cx="274" cy="71" r="2.6" fill="#ffd463" />
-
-            <!-- Front Articulated Wing -->
-            <g class="dragon-wing-front">
-              <path
-                d="M184 90 L160 35 L166 28 L156 32 L86 12 C104 34 104 52 100 58 C118 58 124 72 126 80 C142 78 150 88 154 95 C166 92 175 94 184 96 Z"
-                fill="url(#dragon-wing-grad)"
-                stroke="#e09a42"
-                stroke-width="1.4"
-                stroke-opacity="0.72"
-              />
-              <!-- Wing-finger ribs -->
-              <path
-                d="M160 35 L102 56 M160 35 L126 78 M160 35 L154 93"
-                stroke="#c97834"
-                stroke-width="1.2"
-                stroke-opacity="0.65"
-              />
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <!-- Rising Embers -->
-      <div class="embers">
-        <span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-
-      <!-- Distant Mountain Ridge & Medieval Citadel Silhouette -->
-      <div class="castle-horizon">
-        <svg viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" fill="none">
-          <!-- Distant Mountain Range -->
-          <path
-            d="M0 240 L0 164 L110 118 L215 152 L340 98 L475 150 L620 116 L760 158 L915 104 L1065 138 L1210 86 L1340 132 L1440 106 L1440 240 Z"
-            fill="#141321"
-          />
-
-          <!-- Foreground Hills & Cliffs -->
-          <path
-            d="M0 240 L0 184 L125 156 L260 182 L410 162 L585 194 L770 170 L945 148 L1110 132 L1295 144 L1440 168 L1440 240 Z"
-            fill="#0b0a12"
-          />
-
-          <!-- Left Watchtower -->
-          <g fill="#09080f">
-            <rect x="148" y="102" width="32" height="72" />
-            <polygon points="142,102 164,72 186,102" />
-            <rect x="144" y="100" width="8" height="8" />
-            <rect x="160" y="100" width="8" height="8" />
-            <rect x="176" y="100" width="8" height="8" />
-          </g>
-          <rect class="castle-window w2" x="161" y="118" width="5" height="10" rx="2" />
-          <polygon class="castle-banner b3" points="164,72 184,77 164,83" fill="#a82a27" />
-
-          <!-- Grand Cliffside Medieval Castle (Right) -->
-          <g fill="#08070e">
-            <!-- Curtain Walls & Battlements -->
-            <rect x="1000" y="108" width="248" height="62" />
-            <rect x="1000" y="100" width="12" height="10" />
-            <rect x="1020" y="100" width="12" height="10" />
-            <rect x="1040" y="100" width="12" height="10" />
-            <rect x="1196" y="100" width="12" height="10" />
-            <rect x="1216" y="100" width="12" height="10" />
-            <rect x="1236" y="100" width="12" height="10" />
-
-            <!-- Left Flanking Turret -->
-            <rect x="1054" y="64" width="34" height="92" />
-            <polygon points="1048,64 1071,28 1094,64" />
-
-            <!-- Grand Central Keep -->
-            <rect x="1100" y="42" width="54" height="118" />
-            <polygon points="1092,42 1127,4 1162,42" />
-
-            <!-- Right Flanking Turret -->
-            <rect x="1166" y="70" width="32" height="88" />
-            <polygon points="1160,70 1182,36 1204,70" />
-          </g>
-
-          <!-- Fluttering Crimson Castle Pennants -->
-          <polygon class="castle-banner" points="1127,4 1154,10 1127,17" fill="#b52d28" />
-          <polygon class="castle-banner b2" points="1071,28 1092,33 1071,39" fill="#b52d28" />
-          <polygon class="castle-banner b3" points="1182,36 1201,41 1182,46" fill="#b52d28" />
-
-          <!-- Warm Flickering Torchlit Castle Windows -->
-          <rect class="castle-window" x="1123" y="60" width="7" height="14" rx="3" />
-          <rect class="castle-window w2" x="1112" y="88" width="5" height="11" rx="2" />
-          <rect class="castle-window w3" x="1136" y="88" width="5" height="11" rx="2" />
-          <rect class="castle-window w2" x="1068" y="82" width="5" height="10" rx="2" />
-          <rect class="castle-window w3" x="1179" y="88" width="5" height="10" rx="2" />
-          <rect class="castle-window" x="1026" y="122" width="5" height="9" rx="2" />
-          <rect class="castle-window w2" x="1214" y="122" width="5" height="9" rx="2" />
-        </svg>
-      </div>
+      <div class="sky-photo"></div>
+      <div class="sky-moon-glow"></div>
+      <div class="sky-torch-glow"></div>
+      <canvas id="realm-canvas" class="realm-canvas"></canvas>
+      <div class="sky-scrim"></div>
     </div>
 
     <header class="site-header">
@@ -249,13 +33,13 @@
           <svg class="brand-crest" viewBox="0 0 32 32" fill="none" aria-hidden="true">
             <path
               d="M16 3 L27 7.5 V15.5 C27 22.2 22.3 26.8 16 29.5 C9.7 26.8 5 22.2 5 15.5 V7.5 Z"
-              fill="rgba(148, 35, 34, 0.45)"
+              fill="rgba(125, 35, 36, 0.48)"
               stroke="currentColor"
               stroke-width="1.8"
             />
             <path
               d="M16 8 V22 M12 13 H20 M14 21 H18"
-              stroke="#f3cd75"
+              stroke="#e7c888"
               stroke-width="1.7"
               stroke-linecap="round"
             />
@@ -275,7 +59,7 @@
                 d="M10 2 L12.2 7.8 L18 10 L12.2 12.2 L10 18 L7.8 12.2 L2 10 L7.8 7.8 Z"
                 stroke="currentColor"
                 stroke-width="1.6"
-                fill="rgba(217, 167, 74, 0.2)"
+                fill="rgba(201, 162, 89, 0.2)"
               />
             </svg>
             <span class="motion-label">Pause Sky</span>
@@ -296,7 +80,7 @@
               d="M12 2 L15 9 L22 12 L15 15 L12 22 L9 15 L2 12 L9 9 Z"
               stroke="currentColor"
               stroke-width="1.5"
-              fill="rgba(217, 167, 74, 0.25)"
+              fill="rgba(201, 162, 89, 0.25)"
             />
           </svg>
         </div>
